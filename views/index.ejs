@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Random User</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 30px;
+    }
+    .card {
+      display: inline-block;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    img {
+      border-radius: 50%;
+      width: 120px;
+      height: 120px;
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="<%= person.avatar %>" alt="Avatar">
+    <h2><%= person.username %></h2>
+    <p><b>Email:</b> <%= person.email %></p>
+    <p><b>User ID:</b> <%= person.userId %></p>
+    <p><b>Password:</b> <%= person.password %></p>
+    <p><b>Birthdate:</b> <%= person.birthdate %></p>
+    <p><b>Registered At:</b> <%= person.registeredAt %></p>
+  </div>
+</body>
+</html>
